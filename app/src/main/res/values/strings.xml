@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="hint">Insert a city</string>
+    <string name="content_description_search">Pressing this button, search begins</string>
+    <string name="content_description_imageview">Image of current weather of the city</string>
+    <string name="no_internet">No internet connection.</string>
+    <string name="no_city_provided">Provided city is incorrect.</string>
+</resources>

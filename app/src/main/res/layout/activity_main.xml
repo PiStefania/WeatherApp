@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/app_padding"
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/city_edit_text"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/hint"
+                tools:ignore="Autofill,LabelFor,TextFields,UnusedAttribute" />
+
+            <ImageButton
+                android:id="@+id/search_button"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/search_button_margin_start"
+                android:layout_marginLeft="@dimen/search_button_margin_start"
+                android:layout_weight="1"
+                android:contentDescription="@string/content_description_search"
+                android:src="@android:drawable/ic_search_category_default"
+                android:tint="@color/colorAccent" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/weather_image_view"
+            android:layout_width="@dimen/image_view_h_w"
+            android:layout_height="@dimen/image_view_h_w"
+            android:layout_gravity="center"
+            android:contentDescription="@string/content_description_imageview"
+            android:scaleType="center" />
+
+        <TextView
+            android:id="@+id/grades_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_grades_top"
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_view_size"
+            tools:ignore="UnusedAttribute" />
+
+    </LinearLayout>
+</ScrollView>
